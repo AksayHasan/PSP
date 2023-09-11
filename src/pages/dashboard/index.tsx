@@ -145,7 +145,7 @@ bHelper.callMetaverseAPI(account.address).then(function(response:Number) {
         receiver: receiverAddress,
         chainID: 'D'
     });
-      setGasFee(`${formatAmount({input: String(calcTotalFee([tx], 1000))})} xEGLD`);
+      setGasFee(`${formatAmount({input: String(calcTotalFee([tx], 1000))})} EGLD`);
     }
     else{
       setGasFee('');
