@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
       <main className={homeStyles.main}>
          <div className={homeStyles.dAppNameWrapper}>
-          Welcome to the <span className={homeStyles.dAppName}> { dAppName } ! </span> 
+          Welcome to <span className={homeStyles.dAppName}> { dAppName } ! </span> 
           </div>
          <button className={homeStyles.loginBtn}>
               <Link href={routeNames.unlock}>Login</Link>
