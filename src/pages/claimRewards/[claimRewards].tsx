@@ -48,7 +48,7 @@ export default function ClaimRewards() {
 
     const tokenTransfer = async () => {
         const factory = new TransferTransactionsFactory(new GasEstimator());
-        const esdtTransfer = TokenTransfer.fungibleFromAmount('PSF-36ce19', tokenAmount , 18);
+        const esdtTransfer = TokenTransfer.fungibleFromAmount('UCT-1c2f4d', tokenAmount , 18);
     
         const esdtTransaction = factory.createESDTTransfer({
         tokenTransfer: esdtTransfer,
@@ -62,8 +62,8 @@ export default function ClaimRewards() {
         transactions: esdtTransaction,
         transactionsDisplayInfo : {
             proccessingMessage: 'Proccessing trans ...',
-            errorMessage: 'Da go duhash',
-            successMessage: 'Qydeeee'
+            errorMessage: 'Transaction Failed.',
+            successMessage: 'Transaction successfull.'
         },
         redirectAfterSign: false,
         skipGuardian: true,
@@ -98,7 +98,7 @@ export default function ClaimRewards() {
                   <FontAwesomeIcon icon={faArrowDown } bounce style={{color:"#ffffff"}} />
                 </div>
                 <div className={utilStyles.tokenFields}>
-                  <label className={utilStyles.tokenLabel} htmlFor={utilStyles.tokenInput}>PlaySafe Tokens</label>
+                  <label className={utilStyles.tokenLabel} htmlFor={utilStyles.tokenInput}>UniCrypto Tokens</label>
                   <input className={utilStyles.tokenInput} type='number' min='0' value={tokenAmount} onChange={updateTokenAmount}/>
                 </div>
                 <button className={utilStyles.claimBtn} onClick={tokenTransfer}>Claim</button>
