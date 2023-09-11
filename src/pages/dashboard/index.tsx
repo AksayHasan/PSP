@@ -203,7 +203,7 @@ bHelper.callMetaverseAPI(account.address).then(function(response:Number) {
               <input id='fee-input' type='text' value={gasFee}></input>
           </div>
 
-          <button className={utilStyles.sendBtn} onClick={tokenTransfer}>Send PSF</button>
+          <button className={utilStyles.sendBtn} onClick={tokenTransfer}>Send UCT</button>
           <button className={utilStyles.cancelBtn} onClick={() => setIsOpen(false)}>Cancel</button>
 
         </div>
