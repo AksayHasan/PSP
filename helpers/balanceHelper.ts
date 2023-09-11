@@ -11,7 +11,7 @@ export class BalanceHelper {
         let BalanceAmount: number;
 		try {
 			const res = await fetch(
-				`https://devnet-gateway.multiversx.com/address/${walletAddress}/esdt/PSF-36ce19`
+				`https://gateway.multiversx.com/address/${walletAddress}/esdt/UCT-1c2f4d`
 			);
 
 			const data = await res.json();
