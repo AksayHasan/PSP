@@ -47,8 +47,8 @@ const FormatAmount = dynamic(
 );
 
 export default function Dashboard({pemText} : Props) {
-  const proxyNetworkProvider = new ProxyNetworkProvider("https://devnet-gateway.multiversx.com");
-  const apiNetworkProvider = new ApiNetworkProvider("https://devnet-api.multiversx.com");
+  const proxyNetworkProvider = new ProxyNetworkProvider("https://gateway.multiversx.com");
+  const apiNetworkProvider = new ApiNetworkProvider("https://api.multiversx.com");
   const [currencyAmount, setCurrencyAmount] = useState(0);
   const [tokenAmount, setTokenAmount] = useState(0);
   const [invalidAmountMsg, setInvalidAmountMsg] = useState('');
@@ -70,7 +70,7 @@ bHelper.callMetaverseAPI(account.address).then(function(response:Number) {
  setAccBalance( response.toString() );
 });
  
-  let ownerAddress: Address = new Address('erd1jcqqtrt6zl0ve3cg2a5utyv83vmjp2yjxqt3gnjvccz50ugmpsxs4y5wl9');
+  let ownerAddress: Address = new Address('erd1jnvxhkhcyhcx52dvrp72vdsvmlfa8kq7lau45qehl8l9sr9cmq8sz2yesy');
   //let receiverAddress: Address = new Address('erd1r45kpejjgekq36ue8klvsrx324xs7x3pyk26qf6uhj346x766juqc8vuhx');
 
   let gasEstimator: GasEstimator = new GasEstimator();
@@ -82,7 +82,7 @@ bHelper.callMetaverseAPI(account.address).then(function(response:Number) {
   gasEstimator.forEGLDTransfer(12);
   let owner: Account = new Account(ownerAddress);
   const ownerVerifier = UserVerifier.fromAddress(ownerAddress);
-  let tokenTicker:string = 'PSF-36ce19';
+  let tokenTicker:string = 'UCT-1c2f4d';
   let chainID: string;
 
   const tokenTransfer = async () => {
@@ -99,7 +99,7 @@ bHelper.callMetaverseAPI(account.address).then(function(response:Number) {
       setInvalidAmountMsg("");   
     }
     
-    const transfer = TokenTransfer.fungibleFromAmount('PSF-36ce19', tokenAmount , 18);
+    const transfer = TokenTransfer.fungibleFromAmount('UCT-1c2f4d', tokenAmount , 18);
   
     const tx = factory.createESDTTransfer({
       tokenTransfer: transfer,
@@ -137,7 +137,7 @@ bHelper.callMetaverseAPI(account.address).then(function(response:Number) {
     if(event.target.value != '' && Number(event.target.value) > 0){
       setTokenAmount(event.target.value);
 
-      const transfer = TokenTransfer.fungibleFromAmount('PSF-36ce19', tokenAmount , 18);
+      const transfer = TokenTransfer.fungibleFromAmount('UCT-1c2f4d', tokenAmount , 18);
     
       const tx = factory.createESDTTransfer({
         tokenTransfer: transfer,
@@ -189,7 +189,7 @@ bHelper.callMetaverseAPI(account.address).then(function(response:Number) {
               <div className={utilStyles.amountAvailabeContainer} >
                 <label htmlFor='amount-input'>Amount</label>
                 <span className='available-amount'>
-                    Available: <FormatAmount value={accBalance} data-testid='balance' token='PSF' digits={2} /> 
+                    Available: <FormatAmount value={accBalance} data-testid='balance' token='UCT' digits={2} /> 
                 </span>
                 
               </div>
