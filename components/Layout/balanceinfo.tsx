@@ -24,8 +24,8 @@ export default function BalanceInfo() {
   
   return <>
     <div className={balanceStyles.balanceContainer}>
-        <span className={balanceStyles.tokenBalanceText}>PlaySafe Tokens: 
-        <FormatAmount value={accBalance.toString()} data-testid='balance' token='PSF' className={balanceStyles.tokenBalanceValue} digits={2} /> 
+        <span className={balanceStyles.tokenBalanceText}>UniCrypto Tokens: 
+        <FormatAmount value={accBalance.toString()} data-testid='balance' token='UCT' className={balanceStyles.tokenBalanceValue} digits={2} /> 
         </span> 
     </div>
   </>
