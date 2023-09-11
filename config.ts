@@ -1,5 +1,5 @@
 export const contractAddress =
-    'erd1jnvxhkhcyhcx52dvrp72vdsvmlfa8kq7lau45qehl8l9sr9cmq8sz2yesy';
+    'erd1xdrsy9wls4d3z56k8wu569fgmqglf9yay3qpvrg5k20ujd7tqdeq6jh9xn';
 
 export const dAppName = 'UniCrypto Token';
 
