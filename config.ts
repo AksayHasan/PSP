@@ -1,5 +1,5 @@
 export const contractAddress =
-    'erd1jcqqtrt6zl0ve3cg2a5utyv83vmjp2yjxqt3gnjvccz50ugmpsxs4y5wl9';
+    'erd1jnvxhkhcyhcx52dvrp72vdsvmlfa8kq7lau45qehl8l9sr9cmq8sz2yesy';
 
 export const dAppName = 'PlaySafe Portal';
 
