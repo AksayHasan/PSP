@@ -1,7 +1,7 @@
 export const contractAddress =
     'erd1jnvxhkhcyhcx52dvrp72vdsvmlfa8kq7lau45qehl8l9sr9cmq8sz2yesy';
 
-export const dAppName = 'PlaySafe Portal';
+export const dAppName = 'UniCrypto Token';
 
 export const walletConnectV2ProjectId = '9b1a9564f91cb659ffe21b73d5c4e2d8';
 
