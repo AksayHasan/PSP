@@ -105,7 +105,7 @@ bHelper.callMetaverseAPI(account.address).then(function(response:Number) {
       tokenTransfer: transfer,
       sender: new Address(address),
       receiver: receiverAddress,
-      chainID: 'D'
+      chainID: '1'
   });
     
     const { sessionId } = await sendTransactions({
@@ -143,7 +143,7 @@ bHelper.callMetaverseAPI(account.address).then(function(response:Number) {
         tokenTransfer: transfer,
         sender: new Address(address),
         receiver: receiverAddress,
-        chainID: 'D'
+        chainID: '1'
     });
       setGasFee(`${formatAmount({input: String(calcTotalFee([tx], 1000))})} EGLD`);
     }
