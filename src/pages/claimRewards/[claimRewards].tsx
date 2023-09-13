@@ -55,7 +55,7 @@ export default function ClaimRewards() {
         nonce: 7,
         receiver: receiverAddress,
         sender: ownerAddress,
-        chainID: "D",
+        chainID: "1",
         });
     
         const { sessionId } = await sendTransactions({
